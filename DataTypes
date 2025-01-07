@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let a = 1
+        console.log("hi +a+a")
+        document.write('hi + a+a','<br>')
+        document.write(`hi+ ${a+a}`)
+        console.log(`hi +${a+a}`)*/
+
+       /* a='sai'
+        b='kumar'
+        age = 30
+        let c= `i am ${a+b}, my age is ${age} years old`
+        document.write(c)*/
+
+        let a = null
+        document.write(a,"<br>")
+        document.write(typeof(a))
+
+        let age 
+        console.log(age)
+        
+    </script>
+    
+</body>
+</html>
