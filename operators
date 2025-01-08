@@ -1,0 +1,86 @@
+DAY - 5:
+datatypes:
+there are two types of datatypes:
+primitive: predefined,we can store single values
+Numbers:Stream of characters enclosed in quotes
+        ex:1,-2
+Strings:--single,double,backticks quotes.
+Single and double quotes works same
+--back ticks introduced 
+        
+
+boolean:true or false
+Null:empty values or no value
+undefined :declared variable with no value
+non-primitive
+DAY - 6:
+Arithmetic Operators:
++,-,*,
+Multiplication    -     *
+Division                -      /
+Assignment:
+Var student = “harshitha”
++=
+-=
+%=
+/=
+logical operators:
+&&
+T and t - true
+or - ||
+T OR F=F
+NOT - !
+relational operators:
+<,>,>=,<=,==,===,!=,!===
+(===-strict equal,!===-strict not equal)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<s>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //let a =5
+    //let b =2
+    //a+=40
+    /*document.write(a,"<br>")
+    document.write(a*b,"<br>")
+    document.write(a**b,"<br>")
+    document.write(a/b)*/
+    /*document.write(a>b && a>2,'<br>')
+    document.write(a>b && a>12,'<br>')
+    document.write(a>b || a>12,'<br>')
+    document.write(!(a>12),'<br>')*/
+   /* let a = 5
+    let b = "5"
+    document.write(a==b,"<br>")
+    document.write(a!=b,'<br>')
+    document.write(a===b,'<br>')
+    document.write(a!==b,'<br>')*/
+    /*let t = 40
+    let r = (t>40)?'Ac - off':'Ac - on'
+    document.write(r)*/
+    /*alert("arun")
+    document.write(alert)
+    a=prompt("enter your age?")
+    alert(a)*/
+
+    //a=prompt("enter your major:")
+    //alert(`your major is ${a}`)
+
+    /*let a1 = prompt()
+    let a2 = prompt()
+    document.write(a1+a2,"<br>")*/
+
+    let a1 = prompt()
+    document.write(a1,"<br>")
+    document.write(typeOf(a1),"<br>")
+    let a2 = prompt()
+    document.write(a1+a2,"<br>")
+
+   </script> 
+</body>
+</html>
