@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 10;
+        //5<10(true)
+        /*if(a<b){
+            document.write("hi","<br>")
+        }
+        document.write("welcome to India")
+        //out of block
+        //5>10(False)
+        if(a>b){
+            document.write("hi","<br>")
+        }
+        document.write("welcome to India")*/
+        /*if(a<b){
+            document.write("hi,its true","<br>")
+        }
+        else{
+            document.write("hello,false","<br>")
+        }*/
+        /*age = prompt("enter your age?")
+        name=prompt("enter your name: ")
+        if(age<18){
+            alert(name +" your too young to get married!!")
+        }
+        else if(age<=35){
+            alert(name+" your are too old to marry")
+        }else if(age>35){
+            alert(name+" who will get married at this age")
+        }
+        else{
+            alert(name+" perfect age to get married")
+        }*/
+        a=prompt("enter your a team score:")
+        b=prompt("enter your b team score:")
+        if((a||b>300)&&(a+b<500)){
+            alert("team up")
+        }
+        else{
+
+            alert("can not teamup")
+        }
+
+    </script>
+</body>
+</html>
