@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   /* let a = prompt("enter the number to be divided:")
+    if(a%2 == 0 && a %3 == 0){
+        document.write("it is divisible by 2 and 3")
+    }
+    else{
+        document.write("it is not divisible by 2 and 3")
+    }*/
+    /*let a = prompt("enter first number:")
+    let b = prompt("enter the second number:")
+    let c = prompt("enter thired number:")
+    if(a>b && a>c){
+        document.write(`${a} is largest among 3 numbers`)
+    }
+    else if(b>a && b>c){
+        document.write(`${b} is largest among 3 numbers`)
+    }
+    else{
+        document.write(`${c} is largest among 3 numbers`)
+    }*/
+    let a=parseInt(prompt("enter total no of working days:"))
+    let b=parseInt(prompt("enter number of days for absent:"))
+    workingdays = (a-b)
+    percentage = (workingdays/a)*100
+    if(percentage>=75){
+        document.write("eligible")
+    }
+    else{
+        document.write(`not eligible as you have ${percentage} percentage`)
+    }
+</script>
+</body>
+</html>
