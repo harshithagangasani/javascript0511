@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* let num= prompt("enter a number:")
+        switch(true){
+            case num>0:
+            document.write("number is positive number:")
+            break;
+            case num==0:
+            document.write("number is zero")
+            break;
+            case num<0:
+            document.write("number is negative number:")
+            break;
+            default:
+            document.write("invalid input")
+        }
+        let day = prompt("enter the day:")
+        switch(day){
+            case 'monday':
+            document.write("it is weekday")
+            break;
+            case 'tuesday':
+            document.write("it is weekday")
+            break;
+            case 'wednesday':
+            document.write("it is weekday")
+            break;
+            case 'thursday':
+            document.write("it is weekday")
+            break;
+            case 'friday':
+            document.write("it is weekday")
+            break;
+            case 'saturday':
+            document.write("it is weekend")
+            break;
+            case 'sunday':
+            document.write("it is weekend")
+            break;
+            default:
+            document.write("invalid input")
+
+            let a = parseInt(prompt("Enter the number of units: "), 10);
+            if (a > 0) {
+            let totalBill = 0;
+
+            if (a <= 50) {
+                totalBill = a * 2;
+            } else if (a <= 150) {
+                totalBill = (50 * 2) + ((a - 50) * 3);
+            } else if (a <= 250) {
+                totalBill = (50 * 2) + (100 * 3) + ((a - 150) * 5);
+            } else {
+                totalBill = (50 * 2) + (100 * 3) + (100 * 5) + ((a - 250) * 8);
+            }
+            totalBill += totalBill * 0.2;
+
+            document.write("Total Bill: " + totalBill);
+            } else {
+            alert("Invalid input");
+            }*/
+            let a=parseInt(prompt("Enter the number of students:"))
+            let b= a*(a-1)/2
+            document.write("Total number of handshakes are: "+b)
+    
+
+        
+    </script>
+</body>
+</html>
