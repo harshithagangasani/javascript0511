@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*for(let i = 1;i<=8;i=i+1){
+            if(i>5){
+                continue
+            }
+            console.log(i)
+          }
+          for(let i = 1;i<=8;i=i+2){
+            if(i>5){
+                continue
+            }
+            console.log(i)
+          }
+          a loop inside the another loop the inner loop will execute one time for each iteration of the outer loop an 
+          inner loop within the reapeating block of outerloop
+          for(let i=1;i<=3;i++){
+            document.write(i,"<br>");
+        
+          for(let j =1;j<=4;j++){
+            document.write(j,"");
+          }
+          document.write("<br>")
+        }
+        for(let i =1;i<=4;i++){
+            for(let j = 1;j<=i;j++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }*/
+        let n=5;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j=1;j<=2*i-1;j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        
+    </script>
+    
+</body>
+</html>
