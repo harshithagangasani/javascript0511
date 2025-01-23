@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*function greet(){
+            document.write("Hello world!")
+        }
+        greet()
+        document.write("Welcome to Javascript")
+        greet()*/
+        /*function g(name){
+            document.write("hello "+name+"!")
+        }
+        let name=prompt("enter your name")
+        g(name)*/
+        /*function add(a,b){
+            document.write(a+b)
+        }
+        add(3,5)*/
+        /*function a(aa,bb){
+            return aa+bb;
+        }
+        let n1= parseFloat(prompt("Enter number1"))
+        let n2= parseFloat(prompt("Enter number2"))
+        let result=a(n1,n2);
+        document.write("The sum is: "+result)*/
+
+        sum = function(n1,n2){
+            let r = n1+n2
+            return r
+        }
+        document.write(sum(8,9))
+    </script>
+</body>
+</html>
+Functions:
+A function is a reusable
+it can be called anywhere in the program
+Reusable code: using an existing code with out writing it ever we need 
+we can use the same code with different arguments to get the results
+in javascript, Keyword = function()
+Parameters = values(variables) which are declared inside the ()
+Arguments: values whih are passed through the parameters
