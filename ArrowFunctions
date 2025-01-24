@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<scrp>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let c=()=>{
+            console.log("hi hello")
+        }
+        c()
+
+        let x=(x,y)=>{
+            console.log(x+y)
+            }
+            x(20,30)
+            x(40,50)
+
+            let greet = x=>console.log(x);
+            greet('hello')
+
+            let greet1 =()=>console.log("hello hall")
+            greet1()
+
+            let age=18;
+            let welcome =(age<18)?
+            ()=>console.log('hi gowtham'):
+            ()=>console.log('hi sai charan');
+            welcome();
+
+            function task1(){
+                console.log('task1:start')
+                }
+                function task2(){
+                console.log('Task2: start')
+                }
+                function task3(){
+                console.log('task3:start')
+                }
+                task1()
+                task2()
+                task3()
+
+                console.log("hi heelo");
+                setTimeout(()=>{
+                    console.log("iam waiting")
+                },5000);
+                console.log("iam in lab")*/
+
+                function greet(name,callback){
+                    console.log(`hello,${name}!`)
+                    }
+                    function saygoodbye(){
+                    console.log("goodbye")
+                    }
+                    greet("sam",saygoodbye())
+                    
+    </script>
+</body>
+</html>
