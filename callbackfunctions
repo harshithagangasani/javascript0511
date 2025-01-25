@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mainfunction(callback){
+            console.log('Executing main function');
+            callback()
+            }
+            function callbackFunction(){
+                console.log('callback function executed')
+                } 
+                mainfunction(callbackFunction);
+                function greet(name,callback){
+                    console.log('hello'+name);
+                    callback();
+                    }
+                    function goodbye(){
+                    console.log('Goodbye!')
+                    }
+                    greet('ram',goodbye);
+                    function greet1(name,callaback){
+                        console.log('hello'+name);
+                        callback();
+                        }
+                        greet1('ram',function(){
+                        console.log('goodbye!')
+                        });
+                        function fetchData(callback){
+                            console.log('fetching data')
+                            setTimeout(function(){
+                            console.log('data fetched');
+                            callback();
+                            },2000);
+                            }
+                            function processData(){
+                            console.log('processing the fetched data...')
+                            }
+                            fetchData(processData);
+                            function registeruser(username, email, callback) {
+                                console.log("registering user" + username);
+                                setTimeout(function () {
+                                  console.log("user" + username + "registered succesfully");
+                                  callback(email);
+                                }, 2000);
+                              }
+                              function sendWelcomeEmail(email) {
+                                console.log("sending welcome email to" + email);
+                              }
+                              registeruser("Harshith", "harshith123@gmail.com,sendWelcomeEmail");
+
+                              const numbers = [1,2,3,4,5]
+                                const d = numbers.map(function(num){
+                                return num*2
+                                })
+                                console.log(d)
+                        
+                            
+    </script>
+</body>
+</html>
