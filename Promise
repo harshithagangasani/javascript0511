@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myPromise = new Promise((resolve ,reject) => {
+            let success =true;
+            if(success){
+            resolve("the operation is successful");
+            }else{
+            reject("the operation is failed");
+            }
+        });
+            myPromise.then(result=>{
+            document.write(result);
+            });
+            myPromise.catch(error=>{
+            document.write(error);
+            });
+
+            //Chnaging promises
+         let promise = new Promise((resolve,reject)=>{
+         resolve(5);
+        //     //initial resolve value is 5
+         })
+        promise 
+         .then(result=>{
+             console.log(result);
+             return result*2
+             //return a new value
+         })
+         .then(result=>{
+             console.log(result);
+             return result+3
+            //return a new value
+         })
+         .then(result=>{
+             console.log(result);
+         })
+         .catch(error=>{
+             console.log("error",error);
+         })
+            let pro=new Promise((resolve,reject)=>{
+                resolve(5);
+            })
+            pro.then(result=>{
+                console.log(result)
+                setTimeout((pro)=>{
+                    console.log("success")
+              },3000)
+                })
+        
+    </script>
+</body>
+</html>
+Promise:
+A promise is a special javascript object that represents the eventual completion or failure of an asynchronous  operation
+it allows to handle asynchronous tasks more efficiently than call backs 
+Three states
+1.Pending : The intital state, the promise is still waiting for the operation to finish
+2.fulfilled : the operation completed successfully
+3.rejected:the operation failed;
+
+EXP:
+1) To create a promise-new promise()
+TWO PARAMETERS-
+resolve – to mark the promise as successfully
+reject – mark it as failed
+2)handling the result:
+.then() method is called when promise is fulfilled.It will recevies the result from resolve() .catch() method is called if the promise is rejected it receives the error message from reject()
+Example:
+let myPromise = new Promise((resolve ,reject)) =>{
+let success =true;
+if(success){
+resolve(“the operation is successful);
+}else{
+reject(“the operation is failed);
+});
+mypromise
+.then(result=>{
+Console.log(result);
+});
+.catch(error=>{
+Console.log(error);
+}
+Chanining promises:
+ex:Promise with setTimeOut
+--asynchronous task using setTimeOut, and the promise will resovle after a certain amount of time
