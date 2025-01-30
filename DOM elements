@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <script>
+        const titles=['sai','sam','rahul']
+        for(let i=0;i<titles.length;i++){
+            let title=document.createElement("h1")
+            title.className="a"
+            title.textContent=titles[i]
+            console.log(title)
+        }
+    </script> 
+   <script>
+        let title
+        for(let i=0;i<3;i++){
+            title=document.createElement("h2")
+            title.className="tt"
+            title.textContent=i
+            console.log(title)
+        }
+    </script> 
+    <h1>Removing Child Node</h1>
+    <ul>
+        <li>Sai</li>
+        <li>Sam</li>
+        <li>Sanvi</li>
+    </ul>
+    <script>
+        const ul=document.querySelector('ul')
+        const lists=document.querySelectorAll('li')
+        for(const list of lists){
+            console.log(`Removing ${list.textContent}`)
+            ul.removeChild(list)
+        }
+    </script>
+        <div id="a"> 
+            <h1>sia</h1>
+            <h1>ria</h1>
+        </div>
+        <div id="b">
+            <h1>ram</h1>
+            <h1>sam</h1>
+        </div>
+
+        <script>
+            let n=document.createElement("h2")
+            n.textContent="Sai is the team leader"
+            //get the parent element
+            let p=document.getElementById("b")
+            console.log(p.innerText)
+            //To append new element to the parent node
+            p.appendChild(n)
+            //log the inner text of the parent
+            console.log(p)
+            console.log(p.innerText)
+        </script>
+</body>
+</html>
+</body>
+</html>
