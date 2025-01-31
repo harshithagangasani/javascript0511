@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a"> 
+        <h1 id="c">sia</h1>
+        <h1 id="r">ria</h1>
+    </div>
+    <div id="b">
+        <h1>ram</h1>
+        <h1>sam</h1>
+    </div>
+    <script>
+        let nc=document.createElement("h2")
+        nc.textContent="Harshitha"
+        let n=document.createElement("h2")
+        n.textContent="Rahul"
+        let p=document.getElementById('a')
+        let pc=document.getElementById('a')
+        let l=document.getElementById('r')
+        let lc=document.getElementById('c')
+        p.insertBefore(n,l)
+        pc.insertBefore(nc,lc)
+        console.log(p)
+        console.log(pc)
+    </script>
+    <div id="a">
+        <h1 id="c"> Raquel</h1>
+        <div id="r">Naoh</div>
+    </div>
+    <div id="b">
+        <h1>Hash</h1>
+        <h1>Jay</h1>
+    </div>
+    <div id="a">
+        <h1 id="c"> Raquel</h1>
+        <div id="r">Naoh</div>
+    </div>
+    <div id="b">
+        <h1>Hash</h1>
+        <h1>Jay</h1>
+    </div>
+    <script>
+        let n = document.createElement("h2")
+        n.textContent = "Jennie"
+        let x = document.getElementById("a")
+        let y = document.getElementById("r")
+        p.insertBefore(n,l)
+        console.log(p)
+        let n1 = document.createElement("h2")
+        n1.textContent = "Chandana"
+        let p1 = document.getElementById("a")
+        let l1 = document.getElementById("c")
+        p1.insertBefore(n1,l1)
+        console.log(p1)
+    </script>
+    <script>
+        // let q=document.createElement('h1')
+        // q.textContent="hari"
+        // //let n=document.createElement("h2")
+        // //n.nextContent="Raju"
+
+
+        // let p=document.getElementById("a")
+       
+        // let l=document.getElementById('r')
+        // p.insertBefore(q ,l)
+        // document.write(p)
+
+        // let b=document.getElementById("b")
+        // b.remove()
+
+        let n=document.getElementById("a")
+        let z=document.getElementById("re")
+
+        document.write(n)
+        n.removeChild(l)
+
+        p.replaceChildren(n);
+        console.log(p)
+    </script>
+
+
+</body>
+</html>
