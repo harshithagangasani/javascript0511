@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+let age = parseInt(prompt("Enter your age:"));
+        let citizen = prompt("Enter 'yes' if you are a citizen, otherwise 'no':").toLowerCase();
+        let test = prompt("Enter 'yes' if you passed the citizenship test, otherwise 'no':").toLowerCase();       
+if (age >= 18 && citizen === "yes") {
+            document.write("You are eligible to vote.");
+        } else if (age >= 18 && test === "yes") {
+            document.write("You are eligible to vote.");
+        } else {
+            document.write("You are not eligible to vote.");
+        }*/
+        let premiumMember = prompt("Enter if you have premium (yes/no):").toLowerCase();
+        let spend = Number(prompt("Enter the money spent to avail discount:"));
+
+        if (spend > 100) {
+            if (premiumMember === 'yes') {
+                document.write("Gets 25% discount");
+            } else {
+                document.write("Gets 20% discount"); // You can define a discount for non-premium members too
+            }
+        } else if (spend > 50) {
+            document.write("Gets 10% discount");
+        } else {
+            document.write("No discount available");
+        }
+
+
+
+
+    </script>
+</body>
+</html>
