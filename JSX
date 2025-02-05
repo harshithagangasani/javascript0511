@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- <div id="root"></div>
+    <h1>ria <br> sia</h1><hr>
+    <script src="a.js">
+        //link your javascript file here
+    </script> -->
+    <div id="app"></div>
+    <script type="text/babel">
+        const element=<h1 classname="a">Hello JSX!</h1>
+        const e = document.getElementById('app')
+        const root=ReactDOM.createRoot(e)
+        root.render(element)
+    </script>
+    <div id="app"> </div>
+    <script type="text/babel">
+        const n=10;
+        const m=<h1>React is {n*2} timesbetter than reactjs </h1>
+        const root1 =ReactDOM.createRoot(document.getElementById('app'))
+        root1.render(m)
+    </script>
+    <div id ="app"></div>
+    <script type="text/babel">
+
+        const App=()=>{
+            const isLoggedIn=true;
+            return(
+                <div> 
+                    {isLoggedIn ?(<h1>wellcome back</h1>):(<h1> please Log in</h1>)}
+                    {isLoggedIn &&<h2> you have a notification</h2>}
+
+                </div>
+            );
+        };
+        const root2=ReactDOM.createRoot(document.getElementById('app'))
+        root2.render(<App/>)
+    </script>
+</body>
+</html>
