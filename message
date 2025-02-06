@@ -1,0 +1,22 @@
+import React from 'react';
+//import './App.css';
+import Welcome from './Welcome';
+const App=()=>{
+  return(
+    <div style={{textAlign:'center',color:'green'}}>
+    <Welcome name='Rahul' greeting='Hello!!'/>
+    <Welcome name='Ria' greeting='Hi!!'/>
+    </div>
+  )
+}
+export default App;
+
+
+import React from "react";
+const Welcome=(props)=>{
+    const{name,greeting}=props;
+    return(
+        <h1 className="message">{greeting}{name}.</h1>
+    )
+}
+export default Welcome;
