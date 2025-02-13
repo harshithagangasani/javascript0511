@@ -1,0 +1,84 @@
+/*function App(){
+  const data="hello iam harshi"
+  return(
+    <div>
+      <User1 data={data}/>
+
+    </div>
+  )
+}
+// user1 compomnent
+function User1({data}){
+  return<User2 data={data}/>
+
+}
+function User2({data}){
+  return<User3 data={data}/>
+}
+function User3({data}){
+  return<User4 data={data}/>
+}
+function User4({data}){
+  return<div>{data}</div>
+}
+export default App;*/
+import React, { createContext, useContext } from "react";
+
+// create context to hold the data
+const DataContext = createContext();
+
+function App() {
+  // the data  we want to share with user4
+  const data = "hello iam HARSHI";
+  return (
+    <DataContext.Provider value={data}>
+      <User1 />
+    </DataContext.Provider>
+  );
+}
+// user1 compomnent
+function User1({ data }) {
+  return <User2 />;
+}
+function User2({ data }) {
+  return <User3 />;
+}
+function User3({ data }) {
+  return <User4 />;
+}
+function User4() {
+  const data = useContext(DataContext);
+  return <div>{data}</div>;
+}
+export default App
+
+
+import React from "react";
+
+const Profile = ({ name, email }) => {
+  return (
+    <div className="p-4 border rounded-lg shadow-md w-80">
+      <h2 className="text-xl font-bold">{name}</h2>
+      <p className="text-gray-600">{email}</p>
+    </div>
+  );
+};
+
+const UserDetails = ({ name, email }) => {
+  return <Profile name={name} email={email} />;
+};
+
+const App = () => {
+  const user = {
+    name: "John Doe",
+    email: "john@example.com",
+  };
+
+  return (
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <UserDetails name={user.name} email={user.email} />
+    </div>
+  );
+};
+
+export default App;
