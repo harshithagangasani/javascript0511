@@ -1,0 +1,110 @@
+import React from "react";
+import Child from './Child';
+
+const Parent=()=>{
+  const[message,setMessage]=useState('Hello World');
+
+  const chnageMessage=()=>{
+    setMessage("ypu clicked the button")
+  }
+  return (
+    <div>
+      <h1>{message}</h1>
+      {}
+      <Child chnageMessage={changeMessage}/>
+    </div>
+  )
+}
+export default Parent;
+import React,{useReducer}from 'react'
+import './App.css';
+
+
+function appleReducer(state=3,action){
+  switch(action.type){
+    case 'ADD_APPLE':
+      return state+1 ;
+    
+    case 'EAT_APPLE' :
+      return state-1;
+      
+    default:
+      return state;  
+
+  }
+}
+
+function App(){
+  const[state,dispatch]=useReducer(appleReducer,3)
+  return(
+    <div>
+      <h1>Apple Counter</h1>
+      <p>NUMBER OF APPLES:{state}</p>
+
+      <button className='a'  onClick={()=>dispatch({type:'ADD_APPLE'})}> ADD APPLE</button>
+      <button className='b' onClick={()=>dispatch({type:'EAT_APPLE'})}> EAT APPLE</button>
+      </div>
+  )
+
+}
+export default App;
+
+
+import React, { useReducer } from 'react';
+// Reducer function to track the number of apples
+function appleReducer(state = 3, action) {
+  switch (action.type) {
+    case 'ADD_APPLE':
+      return state + 1;
+    case 'Eat_APPLE':
+      return state - 1;
+    default:
+      return state;
+  }
+}
+function App() {
+  const [count, dispatch] = useReducer(appleReducer, 3);
+  return (
+    <div style={{ textAlign: 'center', padding: '50px', fontSize: '20px', backgroundColor: 'lightblue', margin: 'auto', width: '50%', borderRadius: '10px', marginTop: '50px' }}>
+      {Array.from({ length: count }).map((_, index) => (
+        <img key={index} src={require('./Apple.jpg')} alt='Apple' style={{ width: '100px', height: '100px', margin: '5px', borderRadius: '10px' }} />
+      ))}
+      <h1>Apple Counter</h1>
+      <p>Number of apples: {count}</p>
+      <button
+        style={{ margin: '10px', padding: '10px 20px', fontSize: '16px', backgroundColor: 'green', color: 'white', border: 'none', borderRadius: '5px' }}
+        onClick={() => dispatch({ type: 'ADD_APPLE' })}
+      >
+        Add Apple
+      </button>
+      <button
+        style={{ margin: '10px', padding: '10px 20px', fontSize: '16px', backgroundColor: 'red', color: 'white', border: 'none', borderRadius: '5px' }}
+        onClick={() => dispatch({ type: 'Eat_APPLE' })}
+      >
+        Eat Apple
+      </button>
+    </div>
+  );
+}
+export default App;*/
+import React, {useState, useEffect, useRef} from 'react';
+
+function CounterWithPrev(){
+    const [count, setCount] = useState(0);
+    const prevCount = useRef();
+    //create a ref to store the previous value
+
+    useEffect(()=>{
+        prevCount.current = count;
+    }, [count])
+
+    return(
+        <div>
+            <p>Current Counter: {count}</p>
+            <p>prevCount: {prevCount.current}</p>
+
+            <button onClick={()=>setCount(count+1)}>Increment</button>
+        </div>
+    )
+}
+export default CounterWithPrev;
